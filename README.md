@@ -1,6 +1,6 @@
 # Portfolio
 
-Mon portfolio de développeur web. Il présente mes projets, mes compétences et mes coordonnées.
+Site personnel responsive avec section CV intégrée et prévisualisation des projets.
 
 ## Technologies
 
