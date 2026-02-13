@@ -219,10 +219,6 @@ img {
   background-color: #00b894;
 }
 
-.pill-btn.projects-btn {
-  background-color: #00cec9;
-}
-
 /* Photo */
 .hero-image {
   display: flex;
@@ -269,125 +265,6 @@ img {
   text-align: center;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 50px;
-}
-
-/* Competences */
-.skills {
-  padding: 100px 0;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  margin-top: 50px;
-}
-
-.skill-card {
-  background: rgba(255, 255, 255, 0.03);
-  padding: 30px 20px;
-  border-radius: 16px;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.skill-card:hover {
-  background: rgba(255, 255, 255, 0.06);
-}
-
-.skill-icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 20px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.skill-icon i {
-  font-size: 2.5rem;
-}
-
-.skill-icon.html {
-  background: rgba(227, 76, 38, 0.15);
-  border: 2px solid #e34c26;
-}
-.skill-icon.html i {
-  color: #e34c26;
-}
-
-.skill-icon.css {
-  background: rgba(38, 77, 228, 0.15);
-  border: 2px solid #264de4;
-}
-.skill-icon.css i {
-  color: #264de4;
-}
-
-.skill-icon.js {
-  background: rgba(247, 223, 30, 0.15);
-  border: 2px solid #f7df1e;
-}
-.skill-icon.js i {
-  color: #f7df1e;
-}
-
-.skill-icon.react {
-  background: rgba(97, 218, 251, 0.15);
-  border: 2px solid #61dafb;
-}
-.skill-icon.react i {
-  color: #61dafb;
-}
-
-.skill-icon.php {
-  background: rgba(119, 123, 180, 0.15);
-  border: 2px solid #777bb4;
-}
-.skill-icon.php i {
-  color: #777bb4;
-}
-
-.skill-icon.git {
-  background: rgba(240, 80, 50, 0.15);
-  border: 2px solid #f05032;
-}
-.skill-icon.git i {
-  color: #f05032;
-}
-
-.skill-card h3 {
-  font-size: 1.1rem;
-  color: #ffffff;
-  font-weight: 600;
-}
-
-.skill-level {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 0.7rem;
-  font-weight: 500;
-}
-
-.level-ok {
-  background: rgba(0, 206, 201, 0.15);
-  color: #00cec9;
-  border: 1px solid #00cec9;
-}
-
-.level-progress {
-  background: rgba(253, 203, 110, 0.15);
-  color: #fdcb6e;
-  border: 1px solid #fdcb6e;
-}
-
-.level-learning {
-  background: rgba(108, 92, 231, 0.15);
-  color: #a29bfe;
-  border: 1px solid #a29bfe;
 }
 
 /* Projets */
@@ -530,54 +407,138 @@ img {
   opacity: 0.85;
 }
 
-/* Contact */
-.contact {
+/* CV Section */
+.cv-section {
   padding: 100px 0;
 }
 
-.contact-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 50px;
+.cv-category {
+  margin-bottom: 40px;
 }
 
-.contact-btn {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 16px 32px;
-  border-radius: 16px;
-  font-size: 1rem;
-  font-weight: 500;
-  color: white;
+.cv-category-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(108, 92, 231, 0.4);
+}
+
+.cv-category-title i {
+  color: #6c5ce7;
+  margin-right: 10px;
+}
+
+.cv-card {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 16px;
 }
 
-.contact-btn:hover {
-  opacity: 0.85;
+.cv-card:hover {
+  border-color: rgba(108, 92, 231, 0.4);
 }
 
-.contact-btn i {
-  font-size: 1.3rem;
+.cv-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 8px;
 }
 
-.contact-btn.github:hover {
-  background: #24292e;
+.cv-card-header h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
 }
 
-.contact-btn.linkedin:hover {
-  background: #0077b5;
+.cv-badge {
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 20px;
 }
 
-.contact-btn.email:hover {
+.cv-badge-current {
+  background: rgba(0, 206, 201, 0.15);
+  color: #00cec9;
+  border: 1px solid #00cec9;
+}
+
+.cv-badge-done {
+  background: rgba(108, 92, 231, 0.15);
+  color: #a29bfe;
+  border: 1px solid #a29bfe;
+}
+
+.cv-badge-exp {
+  background: rgba(253, 203, 110, 0.15);
+  color: #fdcb6e;
+  border: 1px solid #fdcb6e;
+}
+
+.cv-card-place,
+.cv-card-date {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 4px;
+}
+
+.cv-card-place i,
+.cv-card-date i {
+  width: 16px;
+  margin-right: 8px;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.cv-card-list {
+  list-style: none;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cv-card-list li {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.65);
+  padding-left: 16px;
+  position: relative;
+}
+
+.cv-card-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
   background: #6c5ce7;
 }
 
-.contact-btn.phone:hover {
-  background: #00b894;
+.cv-card-list li strong {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.cv-download {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.cv-download-btn {
+  background: linear-gradient(135deg, #6c5ce7, #00cec9);
+  font-size: 1rem;
+  padding: 14px 32px;
+}
+
+.cv-download-btn:hover {
+  opacity: 0.9;
 }
 
 /* Footer */
@@ -674,23 +635,13 @@ img {
     height: 220px;
   }
 
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .projects-grid {
     grid-template-columns: 1fr;
   }
 
-  .contact-links {
+  .cv-card-header {
     flex-direction: column;
-    align-items: center;
-  }
-
-  .contact-btn {
-    width: 100%;
-    max-width: 320px;
-    justify-content: center;
+    align-items: flex-start;
   }
 }
 
@@ -720,21 +671,11 @@ img {
     font-size: 1.6rem;
   }
 
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+  .cv-card {
+    padding: 20px;
   }
 
-  .skill-card {
-    padding: 20px 15px;
-  }
-
-  .skill-icon {
-    width: 60px;
-    height: 60px;
-  }
-
-  .skill-icon i {
-    font-size: 1.8rem;
+  .cv-card-header h4 {
+    font-size: 1rem;
   }
 }
